@@ -1,0 +1,6 @@
+@Saas_B2B_Back.WebAPI_HostAddress = http://localhost:5113
+
+GET {{Saas_B2B_Back.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

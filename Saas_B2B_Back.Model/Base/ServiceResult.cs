@@ -1,0 +1,19 @@
+﻿namespace FlowerShop.Model.Base {
+  public interface IServiceResult {
+    int Code { get; set; }
+    string Message { get; set; }
+    object Data { get; set; }
+  }
+
+  public class ServiceResult: IServiceResult {
+    public int Code { get; set; }
+    public string Message { get; set; }
+    public object Data { get; set; }
+
+    public ServiceResult(int code, string message = null, object data = null) {
+      Code = code;
+      Message = message;
+      Data = data;
+    }
+  }
+}
